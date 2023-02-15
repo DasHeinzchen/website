@@ -1,9 +1,23 @@
 {% extends "head.html" %}
 {% block body %}
-    <div>
+    <header class="navigation">
+        <nav>
+            <a href="/home" id="nav-home" class="nav-button">Home</a>
+        </nav>
+    </header>  
+    <div id="content">
+        {% block content %}{% endblock content %}
     </div>
-    {% block content %}{% endblock content %}
     <footer>
     </footer>
+    <script type="text/javascript">
+        var url = window.location.pathname;
+        switch(url) {
+            case "/home":
+                var home = document.getElementById("nav-home");
+                home.classList.add("nav-button-active");
+                break;
+        }
+    </script>
     {% block script %}{% endblock script %}
 {% endblock body %}

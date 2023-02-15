@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    color: #fef0ff;
+    background-color: #121212;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    height: 40px;
+    font-size: 32px;
+    background-color: hsla(0, 0%, 100%, 0.05);
+}
+
+.nav-button {
+    color: #fef0ff;
+    padding: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.nav-button:hover {
+    font-size: 34px;
+    color: aquamarine;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 5px;
+}
+
+.nav-button-active {
+    color: #fab8ff !important; 
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 5px;
+}
